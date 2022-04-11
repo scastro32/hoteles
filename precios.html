@@ -111,16 +111,36 @@
           </div>
         </div>
         <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-          <div class="d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-              <div class="card-header" style="background-color: blue; color: white;">
-              Tarjetas aceptadas
+          <div class="accordion" id="accordionTarjetas">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">Tarjeta Débito</button></h5>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Tarjéta Débito</li>
-                <li class="list-group-item">Tarjéta Crédito</li>
-                <li class="list-group-item">Código QR</li>
-              </ul>
+              <div id="collapseBasica" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                <div class="card-body">
+                  Reserva pagando directamente utilizando tu tarjeta débito o realizando transferencia desde tu sucursal virtual
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCredito" aria-expanded="false" aria-controls="collapseCredito">Tarjeta de Crédito</button></h5>
+              </div>
+              <div id="collapseCredito" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                <div class="card-body">
+                  Puedes reservar en 6 cuotas sin interés. Al llegar, recibirás una casta de obsequios para disfrutar con tu familia. Cancelación gratuita.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseQr" aria-expanded="false" aria-controls="collapseQr">Código QR</button></h5>
+              </div>
+              <div id="collapseQr" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                <div class="card-body">
+                  Reserva cancelando a través de nuestra herramienta código QR que encontrarás en cualquiera de nuestras redes sociales.
+                </div>
+              </div>
             </div>
           </div>
         </div>
