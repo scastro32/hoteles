@@ -175,7 +175,7 @@
             <h6 class="card-subtitle text-muted">Portugal</h6>
             <img class="card-img-top" src="images/lisboa.jpg" alt="hotel madrid">
             <p class="card-text">Hotel ubicado a pocos metros del barrio Alfama</p>
-            <button  type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button  type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
           </div>
           <div>
             <button type="button" class="btn btn-primary btn-reserva"  data-bs-toggle="popover" title="Promociones" data-bs-placement="top" data-bs-content="Consulta las promociones vigentes">Reservar</button>
@@ -255,6 +255,9 @@
         $('.carousel').carousel({
           interval: 2000
         });
+        $('#contacto').on('show.bs.modal', function (e){
+          console.log('el modal contacto se está mostrando');
+        })
       });
     </script>
     <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
