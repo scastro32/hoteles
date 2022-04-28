@@ -1,14 +1,20 @@
-/* .jumbotron {
-    background-color: yellow;
+$yellow: #e5f509;
+
+@mixin margenes ($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron {
+    background-color: $yellow;
     color: black;
-    margin-top: 50px;
+    @include margenes(50px, 10px);
 }
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: yellow;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    background-color: $yellow;
+    @include margenes(10px, 1px);
 }
 
 .footer-address-icon {
@@ -33,4 +39,4 @@ footer {
 .col-sm-4 {
     padding-top: 10px;
 }
- */
+
